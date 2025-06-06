@@ -8,7 +8,7 @@ class Solution {
         //2. Arrays.sort 사용 
         Arrays.sort(hun);
         
-        String answer = new String(hun);
-        return answer;
+        
+        return new String(hun);
     }
 }
