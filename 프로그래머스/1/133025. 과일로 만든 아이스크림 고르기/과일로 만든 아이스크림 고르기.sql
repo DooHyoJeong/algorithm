@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+
+SELECT fh.FLAVOR
+FROM FIRST_HALF as fh
+INNER JOIN ICECREAM_INFO AS ice_info
+ON fh.FLAVOR = ice_info.FLAVOR
+WHERE fh.TOTAL_ORDER > 3000
+AND ice_info.INGREDIENT_TYPE='fruit_based'
+ORDER BY fh.TOTAL_ORDER DESC;
